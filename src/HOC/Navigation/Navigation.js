@@ -8,9 +8,12 @@ export default class Navigation extends React.Component {
     render() {
         return (
             <div className="header-navigation">
-                    <NavLink to={'/'} >
-                        <img className="logo" src={DSCPSIT} alt="DSC PSIT" />
+                <div className="poster-holder">
+                <NavLink to={'/'} >
+                        <img  src={DSCPSIT} alt="DSC PSIT" />
                     </NavLink>
+                </div>
+                    
                 
                 <div className="nav-content">
                     <Link to={'/DashBoard'} >

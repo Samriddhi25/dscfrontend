@@ -18,3 +18,12 @@
 text {
     color: aliceblue;
 }
+.poster-holder {
+    width:30%;
+    height:40%;  
+}
+.poster-holder a img{
+    height:100%;
+    width:100%;
+    
+}

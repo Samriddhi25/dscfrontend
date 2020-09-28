@@ -6,24 +6,23 @@ import ScoreBoard from "./Containers/ScoreBoard/ScoreBoard";
 import StudentProfile from "./Containers/StudentProfile/StudentProfile";
 import TaskPage from "./Containers/TaskPage/TaskPage";
 import Navigation from "./HOC/Navigation/Navigation";
-
+import Hoc from "./HOC/hocComp";
 export default class Routes extends Component {
-    state = {
+  state = {};
 
-    }
-
-    render() {
-        return (
-            <BrowserRouter>
-            <Navigation/>
-                <Switch>
-                    <Route exact path="/" component={Landing} />
-                    <Route path="/DashBoard" component={DashBoard} />
-                    <Route path="/TaskPage" component={TaskPage} />
-                    <Route path="/ScoreBoard" component={ScoreBoard} />
-                    <Route path="/StudentProfile/:id" component={StudentProfile} />
-                </Switch>
-            </BrowserRouter>
-        )
-    }
+  render() {
+    return (
+      <BrowserRouter>
+        <Hoc>
+          <Switch>
+            <Route exact path="/" component={Landing} />
+            <Route path="/dashboard" component={DashBoard} />
+            <Route path="/taskpage" component={TaskPage} />
+            <Route path="/scoreboard" component={ScoreBoard} />
+            <Route path="/studentprofile/:id" component={StudentProfile} />
+          </Switch>
+        </Hoc>
+      </BrowserRouter>
+    );
+  }
 }
