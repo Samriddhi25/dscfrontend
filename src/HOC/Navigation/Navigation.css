@@ -1,0 +1,29 @@
+.header-navigation {
+    width: 100%;
+    height: 12%;
+    background-color: #437FBA;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 54%;
+    height: 6%;
+}
+
+:link{
+    text-decoration: none;
+}
+
+text {
+    color: aliceblue;
+}
+.poster-holder {
+    width:30%;
+    height:40%;  
+}
+.poster-holder a img{
+    height:100%;
+    width:100%;
+    
+}
