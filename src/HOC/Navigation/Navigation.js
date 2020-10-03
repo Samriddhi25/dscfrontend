@@ -10,7 +10,7 @@ export default class Navigation extends React.Component {
         return (
             <div className="header-navigation">
                 <div className="poster-holder">
-                <NavLink to={'/'} >
+                    <NavLink to={'/'} >
                         <img  src={DSCPSIT} alt="DSC PSIT" />
                     </NavLink>
                 </div>
