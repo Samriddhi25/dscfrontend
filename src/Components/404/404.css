@@ -1,0 +1,21 @@
+.body {
+    color: white;
+   background-color: black;
+} 
+.body img {
+   width: 1366px;
+   height: 553px;
+   -webkit-filter: brightness(50%);
+}
+
+.body h1{
+   position: absolute;
+   bottom: 50%;
+   left: 35% ;
+}
+
+.body p{
+   position: absolute;
+   bottom: 40%;
+   left: 45% ;
+}

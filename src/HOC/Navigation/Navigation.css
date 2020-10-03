@@ -14,12 +14,28 @@
 text {
     color: aliceblue;
 }
+
 .poster-holder {
     width:20%;
     height:70px;  
 }
+
 .poster-holder a img{
     height:100%;
     width:100%;
     
+}
+
+.nav-content text {
+    padding-right: 15%;
+}
+
+.myprofile {
+    margin-left: 39%;
+    display: flex;
+}
+
+.myprofile img {
+    padding-left: 10px;
+    width: 25px;
 }
