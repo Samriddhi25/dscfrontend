@@ -8,7 +8,7 @@
 .landing-left{
     width:50vw;
     height:85vh;
-    background-image: url("../../Assets/dsc-psit-login.jpg");
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)) , url("../../Assets/dsc-psit-login.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
