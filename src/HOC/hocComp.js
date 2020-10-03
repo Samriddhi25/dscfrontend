@@ -9,7 +9,7 @@ export default class Hoccomp extends React.Component{
     render(){
         return(
             <div>
-                <Navigation/>
+                <Navigation auth={true}/>
                 {this.props.children}
             </div>
         )
