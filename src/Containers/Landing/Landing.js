@@ -8,9 +8,8 @@ export default class Landing extends React.Component {
   };
 
   toggle(clicked) {
-    if (clicked === "login") this.setState({  types : "login" });
-    else if (clicked === "signup")
-      this.setState({types : "signup" });
+    if (clicked === "login") this.setState({ types: "login" });
+    else if (clicked === "signup") this.setState({ types: "signup" });
   }
   //{this.state.login? "clicked" : ""}
 
@@ -19,37 +18,39 @@ export default class Landing extends React.Component {
 
     return (
       <div className="body">
-        <div className="image">
-          <img src={landing} alt="DSC-psit-landing-page" />
-        </div>
-        <div className="welcome">
-          <div className="welcome-header">
-            <p>WELCOME</p>
-            <p>Get into DSC PSIT Web Panel.</p>
-            <p>Hope you are having a great day.</p>
+        <div className="landing-left">
+         
+          <div className="welcome">
+            <div className="welcome-header">
+              <p>WELCOME</p>
+              <p>Get into DSC PSIT Web Panel.</p>
+              <p>Hope you are having a great day.</p>
+            </div>
+            <div className="welcome-buttons">
+              <button
+                className={`loginButton ${
+                  this.state.types === "login" ? "clicked" : ""
+                }`}
+                onClick={() => this.toggle("login")}
+              >
+                Login
+              </button>
+              <button
+                className={`loginButton ${
+                  this.state.types === "signup" ? "clicked" : ""
+                }`}
+                onClick={() => this.toggle("signup")}
+              >
+                Sign up
+              </button>
+            </div>
           </div>
-          <div className="welcome-buttons">
-            <button
-              className={`loginButton ${this.state.types ==="login" ? 'clicked' : ''}`}
-              onClick={() => (
-                 this.toggle("login")
-              )}
-            >
-              Login
-            </button>
-            <button
-              className={`loginButton ${this.state.types === "signup" ? 'clicked' : ''}`}
-              onClick={() => (
-                 this.toggle("signup")
-              )}
-            >
-              Sign up
-            </button>
-          </div>
         </div>
+        <div className="landing-right">
+     
         {type == "login" ? (
           <div className="loginform">
-            <h2>LOGIN</h2>
+               <h2>LOGIN</h2>
             <form>
               <label>Email</label>
               <input type="text" placeholder="email" />
@@ -64,6 +65,8 @@ export default class Landing extends React.Component {
         ) : (
           <div className="form"></div>
         )}
+        </div>
+        
       </div>
     );
   }
