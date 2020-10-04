@@ -6,11 +6,10 @@ export default class DashBoard extends React.Component {
     
     render(){
         return(
-            <div className="body">
+            <div className="dashboard-body">
                 <div className="header">
                     <img src={dash} alt="dash image"/>
                 </div>
-                  <h1>Dashboard Page</h1>
             </div>
         )
     }
