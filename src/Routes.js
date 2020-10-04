@@ -1,18 +1,18 @@
-import React, { Component } from "react";
-import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
-import Landing from "./Containers/Landing/Landing";
-import DashBoard from "./Containers/Dashboard/Dashboard";
-import ScoreBoard from "./Containers/ScoreBoard/ScoreBoard";
-import StudentProfile from "./Containers/StudentProfile/StudentProfile";
-import TaskPage from "./Containers/TaskPage/TaskPage";
-import Navigation from "./HOC/Navigation/Navigation";
-import Hoc from "./HOC/hocComp";
+import React, { Component, Suspense } from "react";
+import { Switch, Route,  BrowserRouter } from "react-router-dom";
+const Landing = React.lazy(()=>import("./Containers/Landing/Landing"));
+const DashBoard = React.lazy(()=>import("./Containers/Dashboard/Dashboard"));
+const ScoreBoard = React.lazy(()=> import("./Containers/ScoreBoard/ScoreBoard"));
+const StudentProfile = React.lazy(()=> import("./Containers/StudentProfile/StudentProfile"));
+const TaskPage = React.lazy(()=>import("./Containers/TaskPage/TaskPage"));
+const Hoc = React.lazy(()=> import("./HOC/hocComp"));
 export default class Routes extends Component {
   state = {};
 
   render() {
     return (
       <BrowserRouter>
+      <Suspense fallback={<h1>Loading...</h1>}>
         <Hoc>
           <Switch>
             <Route exact path="/" component={Landing} />
@@ -22,6 +22,7 @@ export default class Routes extends Component {
             <Route path="/studentprofile" component={StudentProfile} />
           </Switch>
         </Hoc>
+        </Suspense>
       </BrowserRouter>
     );
   }

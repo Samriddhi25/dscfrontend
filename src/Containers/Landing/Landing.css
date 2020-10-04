@@ -133,6 +133,7 @@ button:focus {
 .signup-details {
     margin-left: 20%;
     margin-top: 5%;
+    width:500px;
 }
 
 .signup-details  label{
