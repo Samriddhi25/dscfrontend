@@ -1,10 +1,18 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink} from "react-router-dom";
 import "./Navigation.css";
 import DSCPSIT from '../../Assets/DSCPSIT.png'
 import Avatar from '../../Assets/hacker.svg'
 
-export default class Navigation extends React.Component {
+export default class Navigation extends React.Component {    
+    state={
+        user: "student"
+    }
+
+    navigate() {
+        if (this.state.user == "mentor") console.log("logout");
+        else if (this.state.user == "student")  window.location.assign("/studentprofile")
+    }
 
     render() {
         return (
@@ -31,7 +39,7 @@ export default class Navigation extends React.Component {
                     <text>
                         Samriddhi Agarwal
                     </text>
-                    <img src={Avatar} alt="my profile" onClick={() => console.log("logout out")}/>
+                    <img src={Avatar} alt="my profile" onClick={() => this.navigate()}/>
                 </div>
             </div>
         )

@@ -19,7 +19,7 @@ export default class Routes extends Component {
             <Route path="/dashboard" component={DashBoard} />
             <Route path="/taskpage" component={TaskPage} />
             <Route path="/scoreboard" component={ScoreBoard} />
-            <Route path="/studentprofile/:id" component={StudentProfile} />
+            <Route path="/studentprofile" component={StudentProfile} />
           </Switch>
         </Hoc>
       </BrowserRouter>

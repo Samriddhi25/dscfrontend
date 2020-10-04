@@ -16,7 +16,7 @@ text {
 }
 
 .poster-holder {
-    width:26%;
+    width:30%;
     height:70px;  
 }
 
@@ -31,7 +31,7 @@ text {
 }
 
 .myprofile {
-    margin-left: 43%;
+    margin-left: 40%;
     display: flex;
 }
 

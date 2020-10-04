@@ -1,6 +1,5 @@
 import React from "react";
 import "./Landing.css";
-import landing from "../../Assets/dsc-psit-login.jpg";
 
 export default class Landing extends React.Component {
   state = {
@@ -11,7 +10,6 @@ export default class Landing extends React.Component {
     if (clicked === "login") this.setState({ types: "login" });
     else if (clicked === "signup") this.setState({ types: "signup" });
   }
-  //{this.state.login? "clicked" : ""}
 
   render() {
     let type = this.state.types;

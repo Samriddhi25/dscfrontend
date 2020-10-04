@@ -1,0 +1,131 @@
+.body {
+    width:100%;
+    height:100%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    background-color: #EEF6FF;
+} 
+
+.profile-left{
+    width:50vw;
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)) , url("../../Assets/dsc-psit-login.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile p:nth-of-type(1){
+    width: 100px;
+    position: absolute;
+    font-size: xx-large;
+    left: 10% ;
+    font-size:280%;
+    bottom: 55%;
+}
+
+.profile p:nth-of-type(2){
+    position: absolute;
+    left: 10% ;
+    bottom: 45%;
+}
+
+.profile p:nth-of-type(3){
+    position: absolute;
+    left: 10% ;
+    bottom: 41%;
+}
+
+.profile-buttons{
+    position: absolute;
+    cursor: pointer;
+    margin: 10px 0px;
+    font-weight: bolder;
+    color: white;
+    left: 10% ;
+    bottom: 26%;
+    width: 100px;
+    padding: 9px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.profile-buttons:hover {
+    color: black;
+    background-color: white;
+}
+
+.profile-right {
+    width: 50%;
+    color: black;
+}
+
+.about{
+    display: flex;
+}
+
+.about  h1 {
+    margin-top: 5%;
+    margin-left: 26%;
+}
+
+.about p {
+    margin-top: 6%;
+    margin-left: 4%;
+    color: #437FBA;
+    font-size: x-large;
+}
+
+.about img {
+    margin-top: 4%;
+    margin-left: 2%;
+    width: 28px;
+}
+
+.my-info {
+    background-color: white;
+    width: fit-content;
+    padding: 2% 5% 0 5% ;
+    margin-left: 13%;
+    margin-top: 3%;
+}
+
+.my-info td{
+    padding-bottom: 6%;
+}
+
+.my-info td:nth-child(1) {
+    width: 150px;
+  }
+
+.my-info td:nth-child(2) {
+    color: #C5C5C5;
+}
+
+.my-task-info {
+    background-color: white;
+    width: fit-content;
+    padding: 2% 15% 2% 15% ;
+    margin-left: 18%;
+    margin-top: 5%;
+}
+
+.my-task-info h2{
+    margin-bottom: 3%;
+}
+
+.my-task-info hr{
+    margin-bottom: 13%;
+}
+.my-task-info td{
+    padding-bottom: 9%;
+}
+
+.my-task-info td:nth-child(1) {
+    width: 150px;
+  }
+
+.my-task-info td:nth-child(2) {
+    color: #C5C5C5;
+}
