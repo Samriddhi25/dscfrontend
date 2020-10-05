@@ -1,0 +1,37 @@
+.analysis-info {
+    margin-top: 2%;
+    background-color: white;
+    width: 30rem;
+    padding: 3% 2% 5% 4%;
+}
+
+.analysis-info th {
+    font-weight: bolder;
+    font-size: x-large;
+    display: inline-block;
+    margin-bottom: 8%;
+}
+
+.analysis-info tr{
+    display: block;
+    padding: 3% ;
+    border-bottom: 3px solid #DEDEDE;
+}
+
+.analysis-info tr:hover{
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+
+.analysis-info td:nth-child(1){
+    width: 450px;
+}
+
+.analysis-info td:nth-child(2){
+    width: 50px;
+}
+
+.analysis-info th:nth-child(1){
+    margin-right: 68%;
+}

@@ -1,0 +1,19 @@
+.user-info {
+    width: 30rem;
+    background-color: white;
+    padding: 3% 2% 3% 4%;
+}
+
+.user-info h2{
+    margin-bottom: 8%;
+}
+
+.user-info table tr{
+    display: block;
+    padding-bottom: 4%;
+}
+
+.user-info td:nth-child(1) {
+   width: 100px;
+   font-weight: bold;
+}

@@ -1,7 +1,17 @@
 .dashboard-body {
     width:100%;
     height:100%;
+    display: inline-block;
 }
 .header img {
     width: 100vw;
+}
+.containers{
+    width: 100%;
+}
+.left-dashboard{
+    width:50%;
+}
+.right-dashboard{
+    width: 50rem;
 }

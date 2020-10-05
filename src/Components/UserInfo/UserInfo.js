@@ -2,7 +2,8 @@ import React from "react";
 import "./UserInfo.css";
 
 const userinfo = (props) => {
-    <div className="UserInfo">
+    return (
+    <div className="user-info">
         <h2>User Information</h2>
         <table>
             <tr>
@@ -15,6 +16,7 @@ const userinfo = (props) => {
             </tr>
         </table>
     </div>
+    )
 };
 
 export default userinfo;

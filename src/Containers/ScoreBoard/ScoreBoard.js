@@ -1,6 +1,9 @@
 import React from "react";
 import "./ScoreBoard.css";
-import score from "../../Assets/stats.jpg"
+import score from "../../Assets/stats.jpg";
+import Rankings from "../../Components/Rankings/Rankings";
+import RankingInfo from "../../Components/Rankings/RankingInfo/RankingInfo";
+
 
 export default class ScoreBoard extends React.Component {
     
