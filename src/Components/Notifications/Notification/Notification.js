@@ -10,6 +10,39 @@ const notification = (props) => {
         <p>tasks notifications notification</p>
         <p>17:90</p>
       </div>
+      <div className="notif">
+        <img src={code} alt="Angular brackets"/>
+        <p>tasks notifications notification</p>
+        <p>17:90</p>
+      </div>
+      <div className="notif">
+        <img src={code} alt="Angular brackets"/>
+        <p>tasks notifications notification</p>
+        <p>17:90</p>
+      </div>
+      <div className="notif">
+        <img src={code} alt="Angular brackets"/>
+        <p>tasks notifications notification</p>
+        <p>17:90</p>
+      </div>
+      <div className="notif">
+        <img src={code} alt="Angular brackets"/>
+        <p>tasks notifications notification</p>
+        <p>17:90</p>
+      </div>
+      <div className="notif">
+        <img src={code} alt="Angular brackets"/>
+        <p>tasks notifications notification</p>
+        <p>17:90</p>
+      </div><div className="notif">
+        <img src={code} alt="Angular brackets"/>
+        <p>tasks notifications notification</p>
+        <p>17:90</p>
+      </div><div className="notif">
+        <img src={code} alt="Angular brackets"/>
+        <p>tasks notifications notification</p>
+        <p>17:90</p>
+      </div>
     </div>
   );
 };

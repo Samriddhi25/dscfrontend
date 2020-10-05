@@ -1,0 +1,9 @@
+.notifications-info {
+    background-color: white;
+    width: 36rem;
+    padding: 2% 3%;
+}
+
+.notifications-info h2 {
+    margin-bottom: 5%;
+}

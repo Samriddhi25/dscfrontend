@@ -1,5 +1,5 @@
 .analysis-info {
-    margin-top: 2%;
+    margin-top: 6%;
     background-color: white;
     width: 30rem;
     padding: 3% 2% 5% 4%;
@@ -9,7 +9,7 @@
     font-weight: bolder;
     font-size: x-large;
     display: inline-block;
-    margin-bottom: 8%;
+    margin-bottom: 6%;
 }
 
 .analysis-info tr{
@@ -33,5 +33,5 @@
 }
 
 .analysis-info th:nth-child(1){
-    margin-right: 68%;
+    margin-right: 64%;
 }

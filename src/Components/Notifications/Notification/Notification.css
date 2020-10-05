@@ -1,4 +1,22 @@
 .notif {
+    margin-bottom: 2%;
+    background-color: white;
+    width: 34rem;
     display: flex;
-    border: 2px solid #DEDEDE;
+    border: 1px solid #DEDEDE;
+}
+
+.notif img {
+    width: 8%;
+}
+
+.notif p:nth-of-type(1) {
+    width: 80%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.notif p:nth-of-type(2) {
+    margin-top: 20px;
+    color: #a1a1a1;
 }

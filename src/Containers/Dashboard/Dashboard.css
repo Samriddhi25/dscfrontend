@@ -1,6 +1,7 @@
 .dashboard-body {
     width:100%;
     height:100%;
+    overflow-y: hidden;
     display: inline-block;
 }
 .header img {
@@ -8,10 +9,14 @@
 }
 .containers{
     width: 100%;
+    display: flex;
+    padding-top: 2%;
 }
 .left-dashboard{
+    padding-left: 6%;
     width:50%;
 }
 .right-dashboard{
-    width: 50rem;
+    padding-left: 2%;
+    width: 50%;
 }
