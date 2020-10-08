@@ -1,6 +1,6 @@
 .backdrop{
     height:100rem;
-    width:100vw;
+    width:100%;
     position: absolute;
     z-index: 999;
     top:0;

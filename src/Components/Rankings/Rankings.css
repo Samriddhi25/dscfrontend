@@ -1,0 +1,32 @@
+.notifications-Info {
+    text-align: center;
+}
+.notifications-Info h1{
+    color: white;
+    margin: 2%;
+    font-weight: bolder;
+}
+.notifications-Info table {
+    color: #437FBA;
+    font-weight: bolder;
+    font-size: large;
+    width: 60%;
+    margin: 0 20%;
+}
+
+.notifications-Info tr {
+    cursor: pointer;
+    display: block;
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 2%;
+}
+
+.notifications-Info tr:hover {
+    background-color: #e7e7e7;
+}
+
+.notifications-Info td:nth-child(2) {
+    width: 35rem;
+}
+

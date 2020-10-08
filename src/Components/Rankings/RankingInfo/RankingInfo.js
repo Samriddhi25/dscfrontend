@@ -4,19 +4,39 @@ import symbol from "../../../Assets/hacker.svg";
 
 export default (props) => {
   return (
-    <div className="Analysis-Info">
-        <img src={symbol} alt="Angular brackets"/>
-        <p>rankinginfo notifications notification</p>
-        <h1>This is the Task List!</h1>
-            <button type="button" onClick={props.close}>Close</button>
-            <table>
-                <tr>
-                    <td>Samriddhi Agarwal</td>
-                    <td>Clamied</td>
-                    <td>12 MArch</td>
-                    <td>17:23</td>
-                </tr>
-            </table>
+    <div className="ranking-Info">
+
+      <div className="rank-title">
+        <h1>Samriddhi Agarwal!</h1>
+        <img src={symbol} alt="Angular brackets" />'
+        <button type="button" onClick={props.close}>Close</button>
+      </div> <table>
+        <tr>
+          <td>Task Task Task Task 1</td>
+          <td>6</td>
+          <td>12 MArch</td>
+          <td>17:23</td>
+        </tr>
+        <tr>
+          <td>Task Task Task Task 1</td>
+          <td>6</td>
+          <td>12 MArch</td>
+          <td>17:23</td>
+        </tr>
+        <tr>
+          <td>Task Task Task Task 1</td>
+          <td>6</td>
+          <td>12 MArch</td>
+          <td>17:23</td>
+        </tr>
+        <tr>
+          <td>Task Task Task Task 1</td>
+          <td>6</td>
+          <td>12 MArch</td>
+          <td>17:23</td>
+        </tr>
+
+      </table>
     </div>
   )
 }

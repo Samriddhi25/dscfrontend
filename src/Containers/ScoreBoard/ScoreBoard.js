@@ -1,19 +1,37 @@
 import React from "react";
 import "./ScoreBoard.css";
 import score from "../../Assets/stats.jpg";
+import Backdrop from "../../Components/Backdrop/Backdrop";
 import Rankings from "../../Components/Rankings/Rankings";
 import RankingInfo from "../../Components/Rankings/RankingInfo/RankingInfo";
 
 
 export default class ScoreBoard extends React.Component {
-    
+    state = {
+        backdrop: false
+    }
+    openBackdrop = () => {
+        this.setState({ backdrop: true })
+    }
+    closeBackdrop = () => {
+        this.setState({ backdrop: false })
+    }
     render(){
         return(
             <div className="body">
+                {this.state.backdrop ? (
+                    <React.Fragment>
+                        <Backdrop close={this.closeBackdrop} />
+                        <RankingInfo close={this.closeBackdrop} />
+                    </React.Fragment>
+
+                ) : null}
                  <div className="header">
-                    <img src={score} alt="score image"/>
+                    <img src={score} alt="dsc score board"/>
                 </div>
-                  <h1>ScoreBoard Page</h1>
+                <div className="containers">
+                        <Rankings clickEvent={this.openBackdrop} />
+                </div>
             </div>
         )
     }
