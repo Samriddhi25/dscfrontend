@@ -3,6 +3,10 @@
   margin:0;
   padding:0;
 }
+.App {
+  width: 100vw;
+  overflow-x: none;
+}
 
 /* .App {
   text-align: center;

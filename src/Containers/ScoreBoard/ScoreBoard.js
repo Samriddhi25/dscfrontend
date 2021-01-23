@@ -18,7 +18,7 @@ export default class ScoreBoard extends React.Component {
     }
     render(){
         return(
-            <div className="body">
+            <div className="body" id="mainbody">
                 {this.state.backdrop ? (
                     <React.Fragment>
                         <Backdrop close={this.closeBackdrop} />
@@ -29,8 +29,8 @@ export default class ScoreBoard extends React.Component {
                  <div className="header">
                     <img src={score} alt="dsc score board"/>
                 </div>
-                <div className="containers">
-                        <Rankings clickEvent={this.openBackdrop} />
+                <div className="">
+                    <Rankings clickEvent={this.openBackdrop} />
                 </div>
             </div>
         )

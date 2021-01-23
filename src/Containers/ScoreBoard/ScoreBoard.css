@@ -1,3 +1,6 @@
 .header img {
     width: 100vw;
 }
+html, body, #mainbody {
+    height: 100%;
+}

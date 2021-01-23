@@ -1,0 +1,75 @@
+.TaskMain{
+    display: flex;
+    width: 100%;
+}
+
+.TaskLeft{
+    text-align: start;
+    width: 80%;
+    float: left;
+}
+
+.TaskRight{
+    width: 20%;
+    float: right;
+}
+
+.TaskTitle{
+    color: #000000;
+    width: 100%;
+}
+
+.TaskTags{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+    display: flex;
+    color: #ffffff;
+}
+
+.tags{
+    background-color: #7db1e6;
+    width: fit-content;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.TaskType{
+    color: #c4c4c4;
+    font-size: 16px;
+    text-align: start;
+}
+
+.TaskAction {
+    justify-content: center;
+}
+
+.moreInfo {
+    display: flex;
+    margin-top: 25px;
+}
+
+.moreInfo button {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    background-color: #437FBA;
+    border: 0px;
+    margin-right: 3%;
+}
+
+button:hover {
+    color: #000000;
+    background-color: #b0d1f1;
+}
+
+.task tr {
+    cursor: default;
+}
+
+.task tr:hover {
+    background-color: white;
+}

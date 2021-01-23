@@ -1,11 +1,11 @@
 import React from "react";
 import "./Rankings.css";
-import {tropy} from "../../Assets/trophy.png"
+import tropy from "../../Assets/trophy.png"
 
 const rankings = (props) => {
   return (
     <div className="notifications-Info">
-      <h1>STUDENT RANKING</h1>
+      <h1  style={{color: '#000000'}}>STUDENT RANKING</h1>
       <table>
         <tr onClick={props.clickEvent}>
           <td>1.</td>
